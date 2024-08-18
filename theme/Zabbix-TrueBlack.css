@@ -1,0 +1,66 @@
+/* Import Zabbix Dark Theme as Base */
+@import "dark-theme.css";
+
+* {
+    /* scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #050505 #1d1d1d;
+}
+
+/* Sidebar Primary */
+.sidebar {
+    background-color: #000;
+}
+
+/* Server Name Text below Zabbix Logo in Sidebar */
+.sidebar .server-name {
+    color: #fff;
+}
+
+/* Searchbox */
+.form-search .search {
+    background: #0d0d0d;
+}
+
+/* Sidebar selected Element */
+.menu-main > li.is-selected > a {
+    background: #0d0d0d;
+}
+
+/* Sidebar Submenu */
+.menu-main .submenu {
+    background: #000;
+}
+
+.menu-main .submenu a {
+    background: #050505;
+}
+
+/* header */
+header {
+    background: #000;
+}
+
+/* buttons */
+button, .btn {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+    color: #fff;
+}
+
+/* main area */
+main {
+    background: #050505;
+}
+
+/* widgets */
+.dashboard-grid-widget-header,
+.dashboard-grid-widget-contents {
+    background: #0d0d0d;
+    border-color: #0d0d0d;
+}
+
+/* tables */
+.list-table {
+    background: #0d0d0d;
+}
