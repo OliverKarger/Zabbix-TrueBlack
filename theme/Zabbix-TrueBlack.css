@@ -13,7 +13,7 @@
 }
 
 /* Server Name Text below Zabbix Logo in Sidebar */
-.sidebar .server-name {
+.sidebar .server-name, footer {
     color: #fff;
 }
 
@@ -23,7 +23,8 @@
 }
 
 /* Sidebar selected Element */
-.menu-main > li.is-selected > a {
+.menu-main > li.is-selected > a,
+.menu-main .submenu > li.is-selected > a {
     background: #0d0d0d;
 }
 
@@ -37,7 +38,7 @@
 }
 
 /* header */
-header {
+header, body {
     background: #000;
 }
 
@@ -46,6 +47,13 @@ button, .btn {
     background: #2d2d2d;
     border-color: #2d2d2d;
     color: #fff;
+}
+
+/* inputs */
+.multiselect, .z-select .focusable, z-select .focusable, .z-select .list, z-select .list, input[type="text"], input[type="password"], input[type="search"], input[type="number"], input[type="email"], input[type="time"], input[type="file"], textarea, select {
+    background: #1d1d1d;
+    color: #fff;
+    border-color: #1d1d1d;
 }
 
 /* main area */
@@ -61,6 +69,23 @@ main {
 }
 
 /* tables */
-.list-table {
+.list-table,
+.table-paging,
+.table-forms-container,
+.list-table.no-data tbody tr td {
+    background: #0d0d0d;
+}
+
+/* filter area */
+.filter-container,
+.filter-forms,
+.tabfilter-container,
+.filter-container.tabfilter-container .tabfilter-content-container,
+.modal-popup-medium .ui-tabs-nav, .modal-popup-large .ui-tabs-nav, .modal-popup-static .ui-tabs-nav, .modal-popup-preprocessing .ui-tabs-nav {
+    background: #0d0d0d;
+}
+
+/* dialogs */
+.overlay-dialogue {
     background: #0d0d0d;
 }
