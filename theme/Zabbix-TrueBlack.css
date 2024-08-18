@@ -32,8 +32,19 @@
 .menu-main .submenu {
     background: #000;
 }
-
 .menu-main .submenu a {
+    background: #050505;
+}
+.menu-user > li.is-selected > a,
+.menu-user .submenu > li.is-selected > a {
+    background: #0d0d0d;
+}
+
+/* Sidebar Submenu */
+.menu-user .submenu {
+    background: #000;
+}
+.menu-user .submenu a {
     background: #050505;
 }
 
