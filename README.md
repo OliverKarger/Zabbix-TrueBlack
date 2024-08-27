@@ -2,7 +2,9 @@
 
 TrueBlack/OLED optimized Theme for Zabbix
 
-<h2>How to install</h2>
+<h1>How to install</h2>
+
+<h2>Theme</h2>
 
 <h3 id="theme_install_docker">Docker</h3>
 <ul>
@@ -17,7 +19,7 @@ TrueBlack/OLED optimized Theme for Zabbix
 <h3 id="theme_install_package">Package Installation</h3>
 Same Paths as for <a href="#theme_install_docker">Docker Installation</a>, just copy Files.
 
-<h3>Graph Theme</h3>
+<h2>Graph Theme</h2>
 
 <h3 id="graph_theme_install_docker">Docker</h3>
 <ol>
