@@ -27,7 +27,7 @@ Same Paths as for <a href="#theme_install_docker">Docker Installation</a>, just 
         Open Shell inside Docker Container: <code>docker exec -it ZabbixDatabase bash</code>
     </li>
     <li>
-        Execute Transaction in [GraphTheme.sql](database/GraphTheme_Add.sql):
+        Execute Transaction in <a href="database/GraphTheme_Add.sql">GraphTheme_Add.sql</a>:
         <ul>
             <li>
                 Execute File Directly: <code>psql -U &lt;user&gt; -W &lt;password&gt; -f &lt;path_to_GraphTheme.sql&gt;</code>
@@ -51,7 +51,7 @@ Same Paths as for <a href="#theme_install_docker">Docker Installation</a>, just 
 
 <ul>
     <li>
-        Execute File Directly: <code>psql -U &lt;user&gt; -W &lt;password&gt; -f &lt;path_to_GraphTheme.sql&gt;</code>
+        Execute File Directly: <code>psql -U &lt;user&gt; -W &lt;password&gt; -f <a href="database/GraphTheme_Add.sql">GraphTheme_Add.sql</a></code>
     </li>
     <li>
         Execute Command:
@@ -67,7 +67,7 @@ Same Paths as for <a href="#theme_install_docker">Docker Installation</a>, just 
 </ul>
 
 #### Update Theme
-To Update the Theme, use the `database/GraphTheme_Update.sql` instead of `database/GraphTheme_Add.sql`
+To Update the Theme, use the <code>database/GraphTheme_Update.sql</code> instead of <code>database/GraphTheme_Add.sql</code>
 
 Repeat Steps from <a href="#graph_theme_install_docker">Docker</a> or <a href="#graph_theme_install_package">Package Install</a>
 
