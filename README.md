@@ -1,31 +1,68 @@
-# Zabbix-TrueBlack
+<h1>Zabbix TrueBlack</h1>
 
 TrueBlack/OLED optimized Theme for Zabbix
 
-## How to install:
+<h2>How to install</h2>
 
 <h3 id="theme_install_docker">Docker</h3>
-- Mount `Zabbix-TrueBlack.css` to `/usr/share/zabbix/assets/styles/Zabbix-TrueBlack.css`
-- Mount `APP-override.php` to `/usr/share/zabbix/include/classes/core/APP.php`
+<ul>
+    <li>
+        Mount <code>Zabbix-TrueBlack.css</code> to <code>/usr/share/zabbix/assets/styles/Zabbix-TrueBlack.css</code>
+    </li>
+    <li>
+        Mount <code>APP-override.php</code> to <code>/usr/share/zabbix/include/classes/core/APP.php</code>
+    </li>
+</ul>
 
 <h3 id="theme_install_package">Package Installation</h3>
 Same Paths as for <a href="#theme_install_docker">Docker Installation</a>, just copy Files.
 
-### Graph Theme
+<h3>Graph Theme</h3>
 
 <h3 id="graph_theme_install_docker">Docker</h3>
-1. Open Shell inside Docker Container: `docker exec -it ZabbixDatabase bash`
-2. Execute Transaction in [GraphTheme.sql](database/GraphTheme_Add.sql):
-    - Execute File Directly: `psql -U <user> -W <password> -f <path_to_GraphTheme.sql>`
-    - Execute Command:
-        1. `psql -U <user> -W <password>`
-        2. Copy Content of `GraphTheme.sql`, insert and execute into psql Shell
+<ol>
+    <li>
+        Open Shell inside Docker Container: <code>docker exec -it ZabbixDatabase bash</code>
+    </li>
+    <li>
+        Execute Transaction in [GraphTheme.sql](database/GraphTheme_Add.sql):
+        <ul>
+            <li>
+                Execute File Directly: <code>psql -U &lt;user&gt; -W &lt;password&gt; -f &lt;path_to_GraphTheme.sql&gt;</code>
+            </li>
+            <li>
+                Execute Command:
+                <ol>
+                    <li>
+                        <code>psql -U &lt;user&gt; -W &lt;password&gt;</code>
+                    </li>
+                    <li>
+                        Copy Content of <code>GraphTheme.sql</code>, insert and execute into psql Shell
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
 
 <h4 id="graph_theme_install_package">Package Installation</h4>
-- Execute File Directly: `psql -U <user> -W <password> -f <path_to_GraphTheme.sql>`
-- Execute Command:
-    1. `psql -U <user> -W <password>`
-    2. Copy Content of `GraphTheme.sql`, insert and execute into psql Shell
+
+<ul>
+    <li>
+        Execute File Directly: <code>psql -U &lt;user&gt; -W &lt;password&gt; -f &lt;path_to_GraphTheme.sql&gt;</code>
+    </li>
+    <li>
+        Execute Command:
+        <ol>
+            <li>
+                <code>psql -U &lt;user&gt; -W &lt;password&gt;</code>
+            </li>
+            <li>
+                Copy Content of <code>GraphTheme.sql</code>, insert and execute into psql Shell
+            </li>
+        </ol>
+    </li>
+</ul>
 
 #### Update Theme
 To Update the Theme, use the `database/GraphTheme_Update.sql` instead of `database/GraphTheme_Add.sql`
